@@ -4,22 +4,16 @@
 
 本工具用于自动化访问四川大学教务系统，实现课表查询、成绩查询、学籍信息、方案修读、空闲教室、可信证明下载等功能。支持自动保存和加载登录 cookies，避免频繁输入验证码。
 
----
-
 ## 环境
 
 -   Python >=3.7
 -   依赖见 `requirements.txt`
-
----
 
 ## 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ## 使用方法
 
@@ -54,15 +48,11 @@ pip install -r requirements.txt
 
 > **注意：首次使用必须先输入 0 登录，后续可直接选择其他功能。**
 
----
-
 ## 文件说明
 
 -   `sculogin.py`：主程序文件
 -   `cookies.json`：自动保存的登录 cookies
 -   `学号密码.txt`：保存学号和密码（仅本地使用）
-
----
 
 ## 常见问题
 
@@ -70,19 +60,13 @@ pip install -r requirements.txt
 -   **cookies 过期**：如遇自动登录失败，请重新输入验证码登录。
 -   **依赖缺失**：请确保已正确安装 requirements.txt 中所有库。
 
----
-
 ## 联系作者
 
 如有问题或建议，请于[仓库](https://github.com/pingg241/sculogin)提 ISSUE 或者 PR。
 
----
-
 ## 免责声明
 
 本工具仅供学习交流使用，请勿用于任何违反学校规定的用途。使用过程中产生的任何后果由用户自行承担。
-
----
 
 ## 示例命令
 
