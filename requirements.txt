@@ -1,4 +1,10 @@
-requests
-beautifulsoup4
-pillow
-colorama
+beautifulsoup4==4.13.4
+certifi==2025.7.14
+charset-normalizer==3.4.2
+colorama==0.4.6
+idna==3.10
+pillow==11.3.0
+requests==2.32.4
+soupsieve==2.7
+typing_extensions==4.14.1
+urllib3==2.5.0
