@@ -3,12 +3,9 @@ from bs4 import BeautifulSoup
 import hashlib
 import os
 import time
-import random
-import sys
 import re
 import json
 import platform
-from PIL import Image
 login_system = None
 CHAR_SET = '0123456789abcdefghijklmnopqrstuvwxyz'
 CAPTCHA_LEN = 4
@@ -359,7 +356,7 @@ def 学籍查询():
             key = name.get_text(strip=True)
             val = get_real_value(value)
             if val:
-                print(f"{key}: {val}")   
+                print(f"{key}: {val}")
 
 def clean_name(name):
     return re.sub(r"<[^>]+>", "", name).replace("&nbsp;", "").strip()
@@ -716,11 +713,11 @@ def display_menu():
         "9": "考试安排(下次考试更新)",
         "q": "退出程序"
     }
-    LEFT_WIDTH = 20  
+    LEFT_WIDTH = 20
     def display_width(s):
         width = 0
         for char in s:
-            if '\u4e00' <= char <= '\u9fff':  
+            if '\u4e00' <= char <= '\u9fff':
                 width += 2
             else:
                 width += 1
@@ -757,7 +754,7 @@ def display_menu():
         else:
             print(left_formatted)
     print("=" * 60)
-    
+
     print("请选择:")
 def call_functions(choices):
     for choice in choices:
